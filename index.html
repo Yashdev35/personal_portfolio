@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Kumbhkarn | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section id="about">
+  <!-- Main Card Section -->
+  <header class="main-card" id="home">
+    <div class="intro-section">
+      <h1>Hi, I am <span class="name-red">Yash 
+        Kumbhkarn</span><img src="image.jpg" alt="Yash's Image" class="profile-img"></h1>
+      <p>Android Developer | Machine Learning Enthusiast</p>
+      <div class="about-me-card">
         <h2>About Me</h2>
-        <p>Hello! I am Yash Kumbhkarn, btech Student at IIT Indore in CSE department. I enjoy building innovative solutions and exploring new technologies.</p>
-    </section>
+        <p>I am a second-year CSE student at IIT Indore, passionate about Android development and machine learning.</p>
+      </div>
+    </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>[Other skills]</li>
-        </ul>
-    </section>
+  </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
-        <ul>
-            <li>Project 1: Description</li>
-            <li>Project 2: Description</li>
-            <li>Project 3: Description</li>
-        </ul>
-    </section>
+  <!-- Scrollable Cards Section -->
+  <section class="scrollable-section">
+    <div class="scroll-cards">
+      <div class="card education-card">
+        <h3>Education</h3>
+        <p class="info_text">IIT Indore, B.Tech CSE</p>
+      </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/Yashdev35">Yashdev35</a></p>
-    </section>
+      <div class="card skills-card">
+        <h3>Skills</h3>
+        <p class="info_text">Android Development, Machine Learning, Python</p>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Yash Kumbhkarn. All rights reserved.</p>
-    </footer>
+      <div class="card experience-card">
+        <h3>Experience</h3>
+        <p class="info_text">Internship at XYZ Corp as Android Developer</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="card professional-id-card">
+        <h3>Professional Identity</h3>
+        <p class="info_text">Android Developer | Machine Learning Enthusiast</p>
+      </div>
+
+      <div class="card socials-card">
+        <h3>Socials</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/yashkumbhkarn" target="_blank"><img src="https://imgs.search.brave.com/O8EFpP3y8aeJ6RVxZXLzbWWPysLY8b0uo0Ty_VSHUKU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4w/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvc2hpZnQtbG9n/b3R5cGVzLzMyL0xp/bmtlZGluLTEyOC5w/bmc" alt="LinkedIn"></a>
+          <a href="https://www.github.com/yashkumbhkarn" target="_blank"><img src="https://imgs.search.brave.com/ZZVkPN-_cIr6ZXIsJ1d4-RndUMqDkIMUu_gRiPCf69I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naXRo/dWIuZ2l0aHViYXNz/ZXRzLmNvbS9hc3Nl/dHMvR2l0SHViLU1h/cmstZWEyOTcxY2Vl/Nzk5LnBuZw" alt="GitHub"></a>
+          <a href="mailto:yashkumbhkarn@gmail.com"><img src="https://imgs.search.brave.com/8fYAauKuq8SXuo-255zjUeSLcXN4pJuwLXAnj7BK0cM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYWls/bWV0ZW9yLmNvbS9s/b2dvcy9hc3NldHMv/UE5HL0dtYWlsX0xv/Z29fMTI4cHgucG5n" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for any collaboration or just to say hi!</p>
+    <p>Email: yashkumbhkarn@gmail.com</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
