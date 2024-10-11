@@ -242,7 +242,104 @@ body {
 .scrollable-section::-webkit-scrollbar-thumb:hover {
   background: #ff6e64;
 }
+/* General section styling */
+section {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
 
+section h2 {
+  color: #ff4136;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tech Stacks section */
+.tech-stacks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tech-stack-card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack-card h3 {
+  color: #ff4136;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.tech-stack-card p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tech-stack-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.tech-stack-card img:hover {
+  transform: scale(1.1);
+}
+
+/* Projects section */
+#projects {
+  background-color: #111;
+}
+
+#projects .card {
+  margin: 0 auto;
+}
+
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#projects .proj {
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+#projects .proj:hover {
+  color: #ff6e64;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tech-stacks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tech-stack-card {
+    width: 90%;
+    max-width: 300px;
+  }
+}
 /* Contact Section Styling */
 .contact-section {
   width: 100%;
